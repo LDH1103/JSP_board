@@ -7,10 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>JSP Board</title>
+    <%--  부트스트랩  --%>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<%--네비바--%>
+<%@ include file="layout/nav.jsp" %>
+
+<!-- 접속시 메인 페이지로 이동 -->
+<script>
+    location.href="/views/main.jsp";
+</script>
+
+<%--  부트스트랩  --%>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
